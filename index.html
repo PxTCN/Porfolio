@@ -311,15 +311,15 @@
   .about-card p:last-child{margin-bottom:0;}
   .fact-row{display:flex;flex-direction:column;gap:14px;}
   .fact{
-    display:flex;gap:14px;align-items:flex-start;
     background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:16px 18px;
   }
+  .fact-head{display:flex;align-items:center;gap:12px;margin-bottom:6px;}
   .fact-dot{
     width:34px;height:34px;border-radius:50%;background:var(--sky-soft);color:var(--sky-dark);
     display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;font-size:14px;
   }
-  .fact h5{font-size:14.5px;font-weight:700;margin-bottom:2px;}
-  .fact p{font-size:13.5px;color:var(--slate);}
+  .fact h5{font-size:14.5px;font-weight:700;margin:0;line-height:1;}
+  .fact p{font-size:13.5px;color:var(--slate);margin:0;padding-left:46px;line-height:1.5;}
 
   /* ---------- Contact / footer ---------- */
   .contact{
@@ -877,16 +877,20 @@
         </div>
         <div class="fact-row">
           <div class="fact">
-            <div class="fact-dot">🎓</div>
-            <div><h5>Education</h5><p>BBA, Tourism Management — Mae Fah Luang University (2017–2021)</p></div>
+            <div class="fact-head"><div class="fact-dot">🎓</div><h5>Education</h5></div>
+            <p>BBA, Tourism Management — Mae Fah Luang University (2017–2021)</p>
           </div>
           <div class="fact">
-            <div class="fact-dot" style="font-size:15px;">中</div>
-            <div><h5>Learning Mandarin</h5><p>Practical, B2B-applicable Chinese — practiced partly by building HSK Hero</p></div>
+            <div class="fact-head"><div class="fact-dot">📍</div><h5>Location</h5></div>
+            <p>Based in Bangkok, Thailand — open to remote-first teams</p>
           </div>
           <div class="fact">
-            <div class="fact-dot" style="font-size:13px;">&lt;/&gt;</div>
-            <div><h5>Vibe coding</h5><p>Shipping small AI-native products for the hands-on practice of it</p></div>
+            <div class="fact-head"><div class="fact-dot" style="font-size:16px;">💬</div><h5>Languages</h5></div>
+            <p>Thai (native), English (fluent)</p>
+          </div>
+          <div class="fact">
+            <div class="fact-head"><div class="fact-dot" style="font-size:16px;">💻</div><h5>Open to Remote</h5></div>
+            <p>Growth Marketing, Demand Gen, Product & Regional Marketing roles — SG, US, UK, EU</p>
           </div>
         </div>
       </div>
