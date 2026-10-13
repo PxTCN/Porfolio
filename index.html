@@ -296,10 +296,16 @@
     background:var(--cloud);border:1px solid var(--line);
     padding:7px 14px;border-radius:var(--r-pill);font-size:13px;font-weight:500;color:var(--ink);
   }
-  .tools-strip{
-    margin-top:36px;display:flex;flex-wrap:wrap;gap:10px;
+  .tools-grid{
+    margin-top:36px;display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:12px;
   }
-  .tools-strip .chip{background:#fff;}
+  .tool-card{
+    background:var(--cloud);border:1px solid var(--line);border-radius:var(--r-md);
+    padding:13px 16px;
+  }
+  .tool-card .tool-name{display:block;font-weight:700;font-size:13.5px;color:var(--ink);margin-bottom:3px;}
+  .tool-card .tool-desc{font-size:12.5px;color:var(--slate);line-height:1.45;}
 
   /* ---------- Certificates ---------- */
   .certs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
@@ -892,16 +898,31 @@
           </div>
         </div>
       </div>
-      <div class="tools-strip">
-        <span class="chip">HubSpot</span><span class="chip">Apollo</span><span class="chip">Iterable</span>
-        <span class="chip">Campaign Monitor</span><span class="chip">OptiMonk</span>
-        <span class="chip">GA4</span><span class="chip">Google Search Console</span><span class="chip">Ahrefs</span>
-        <span class="chip">SEMrush</span><span class="chip">SimilarWeb</span><span class="chip">Google Keyword Planner</span>
-        <span class="chip">Screaming Frog</span><span class="chip">SEOquake</span>
-        <span class="chip">Facebook Ads</span><span class="chip">LinkedIn</span><span class="chip">TikTok</span><span class="chip">LINE OA</span>
-        <span class="chip">WordPress</span><span class="chip">Google Tag Manager</span><span class="chip">Google Sheets</span>
-        <span class="chip">Apps Script</span><span class="chip">Excel</span><span class="chip">Canva</span>
-        <span class="chip">ChatGPT · Claude · Gemini</span><span class="chip">NotebookLM</span>
+      <div class="tools-grid">
+        <div class="tool-card"><span class="tool-name">HubSpot</span><span class="tool-desc">CRM management, MQL→SQL deal pipeline criteria, email marketing, forms & pop-ups, sequences, reporting, intent-based ABM</span></div>
+        <div class="tool-card"><span class="tool-name">Apollo</span><span class="tool-desc">ICP selection & prospecting for ABM campaigns</span></div>
+        <div class="tool-card"><span class="tool-name">Iterable</span><span class="tool-desc">Segmented email marketing automation</span></div>
+        <div class="tool-card"><span class="tool-name">Campaign Monitor</span><span class="tool-desc">Email campaign build & delivery</span></div>
+        <div class="tool-card"><span class="tool-name">OptiMonk</span><span class="tool-desc">On-site pop-up campaigns, behavior-based triggers</span></div>
+        <div class="tool-card"><span class="tool-name">GA4</span><span class="tool-desc">Traffic-source & user-behavior analysis for optimization</span></div>
+        <div class="tool-card"><span class="tool-name">Google Search Console</span><span class="tool-desc">Keyword performance tracking, content optimization, index requests</span></div>
+        <div class="tool-card"><span class="tool-name">Ahrefs</span><span class="tool-desc">Content performance tracking & competitor analysis</span></div>
+        <div class="tool-card"><span class="tool-name">SEMrush</span><span class="tool-desc">Content performance tracking & competitor analysis</span></div>
+        <div class="tool-card"><span class="tool-name">SimilarWeb</span><span class="tool-desc">Search, web & social benchmarking, competitor analysis</span></div>
+        <div class="tool-card"><span class="tool-name">Google Keyword Planner</span><span class="tool-desc">Keyword research for ads & content</span></div>
+        <div class="tool-card"><span class="tool-name">Screaming Frog</span><span class="tool-desc">Technical SEO site audits</span></div>
+        <div class="tool-card"><span class="tool-name">SEOquake</span><span class="tool-desc">On-page SEO audits</span></div>
+        <div class="tool-card"><span class="tool-name">Facebook Ads</span><span class="tool-desc">Paid social campaign setup & execution</span></div>
+        <div class="tool-card"><span class="tool-name">LinkedIn</span><span class="tool-desc">B2B brand awareness & visibility</span></div>
+        <div class="tool-card"><span class="tool-name">TikTok</span><span class="tool-desc">Brand awareness via short-form content</span></div>
+        <div class="tool-card"><span class="tool-name">LINE OA</span><span class="tool-desc">Broadcast messaging, brand consideration</span></div>
+        <div class="tool-card"><span class="tool-name">WordPress</span><span class="tool-desc">Content publishing & campaign landing pages</span></div>
+        <div class="tool-card"><span class="tool-name">Google Tag Manager</span><span class="tool-desc">Tag setup for Facebook Ads tracking</span></div>
+        <div class="tool-card"><span class="tool-name">Google Sheets</span><span class="tool-desc">Data analysis — Pivot Tables, SUMIFS, COUNTIF</span></div>
+        <div class="tool-card"><span class="tool-name">Apps Script</span><span class="tool-desc">Dashboard builds & data-pull automation</span></div>
+        <div class="tool-card"><span class="tool-name">Excel</span><span class="tool-desc">Data analysis & reporting</span></div>
+        <div class="tool-card"><span class="tool-name">Canva</span><span class="tool-desc">Banner & ad creative design</span></div>
+        <div class="tool-card"><span class="tool-name">ChatGPT · Claude · Gemini · NotebookLM</span><span class="tool-desc">Research & workflow automation</span></div>
       </div>
     </div>
   </section>
